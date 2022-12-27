@@ -1,0 +1,224 @@
+:root {
+    --br:5px;
+   }
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* IMAGEN MESSI*/ 
+@media (min-width: 500px) {
+    body#login {
+    background: url(img/messi.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    }
+}
+/* FORMULARIO */
+@media (min-width: 500) {
+    form {
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+form {
+    width: 364px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 32px 36px 33px;
+}
+form h1  {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+#btn-login {
+    height: 38px;
+    width: 100%;
+    background: #374785;
+    border: 1px solid #24305E;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+label {
+    height: 18px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+/*footer*/ 
+@media (min-width: 500px) {
+    footer {
+    background-color: #FFFFFF;
+    padding: 7px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+@media (max-width: 500px) {
+    footer {
+    display: flex;
+    justify-content: center;
+}
+}
+/* IMAGEN COPA*/ 
+@media (max-width: 500px) {
+    .copa{
+    background-image: url(img/Logo_copa.png);
+    background-repeat: no-repeat;
+    height: 238px;
+    width: 199px;
+    margin: auto;
+    margin-top: 58px;
+    margin-bottom: 10px;
+}
+} 
+footer a {
+    padding-bottom: 25px;
+}
+
+/*Nav map*/
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn-map {
+    width: 95%;
+    margin-right: 23px;
+    background: #374785;
+    border: 1px solid #24305e;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--br);
+    height: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    -webkit-border-radius: var(--br);
+    -moz-border-radius: var(--br);
+    -ms-border-radius: var(--br);
+    -o-border-radius: var(--br)
+}
+.navbar-toggler{
+    box-shadow: 0 0 0 !important;
+    border: 0;
+
+}
+.navbar-collapse {
+    margin-left: 17px;
+}
+.logo-scaloneta {
+    margin-right: 89px;
+    margin-left: 19px
+}
+li {
+    list-style: none;
+}
+.logo-guayerd {
+    Width: 14.38px;
+    margin-right: 18px;
+    margin-left: 21px;
+    display: none;
+}
+.logo-g{
+    display: block;
+    margin-left: 16px;
+}
+
+@media (min-width: 500px) {
+    .logo-guayerd {
+        width: 112.07px;
+        height: 28.8px;
+        display: block;
+    }
+    .logo-g {
+        display: none; 
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+    #btn-map {
+        width: auto;
+    }
+}
+
+/* Mapa */
+#map { 
+    height: calc(100vh - 56px); 
+    position: relative;
+}
+select{
+    box-sizing: border-box;
+    position: fixed;
+    width: 326px;
+    height: 38px;
+    left: 5%;
+    top: 30%;
+    z-index: 1000;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+    border-radius: var(--br);    
+}
+@media (min-width: 500px) {
+    select {
+        left: 32%;
+        top: 15%;
+    }
+}
+.container h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    padding: 30px;
+}
+.container h1 span {
+    color: #119DD8;
+}
+.card .img-wrapper {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.card .num-dorsal {
+    position: absolute;
+    left: 86%;
+    top: 2%;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: #FFFFFF;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
