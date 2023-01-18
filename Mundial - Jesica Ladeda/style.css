@@ -18,9 +18,15 @@
     }
 }
 /* FORMULARIO */
-@media (min-width: 500) {
+@media (min-width: 500px) {
     form {
         box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+    #login main{
+        height: 93vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 form {
@@ -64,24 +70,29 @@ label {
 }
 
 /*footer*/ 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
     footer {
     background-color: #FFFFFF;
-    padding: 7px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
+    padding-top: 10px;
     left: 0;
     right:0;
     display: flex;
     justify-content: flex-end;
     }
+    footer a{
+        padding: 4px;
+        align-content: center;
 }
 @media (max-width: 500px) {
     footer {
     display: flex;
     justify-content: center;
+
 }
-}
+}}
 /* IMAGEN COPA*/ 
 @media (max-width: 500px) {
     .copa{
@@ -91,13 +102,9 @@ label {
     width: 199px;
     margin: auto;
     margin-top: 58px;
-    margin-bottom: 10px;
+    margin-bottom: 65px;
 }
 } 
-footer a {
-    padding-bottom: 25px;
-}
-
 /*Nav map*/
 
 nav {
@@ -140,7 +147,7 @@ li {
     list-style: none;
 }
 .logo-guayerd {
-    Width: 14.38px;
+    Width: 12.38px;
     margin-right: 18px;
     margin-left: 21px;
     display: none;
@@ -220,5 +227,10 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+}
+@media (min-width:500px){
+    .login-container{
+        height: 93hv;
+    }
 }
