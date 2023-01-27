@@ -14,28 +14,23 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
     }
-}
-/* FORMULARIO */
-@media (min-width: 500px) {
     form {
+        background: #FFFFFF;
         box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width: 364px;
+        padding: 32px 35px 33px 35px
     }
     #login main{
-        height: 93vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
-form {
-    width: 364px;
-    background: #FFFFFF;
-    border-radius: 5px;
-    padding: 32px 36px 33px;
-}
 form h1  {
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -59,7 +54,6 @@ form h1  {
     color: #FFFFFF;
 }
 label {
-    height: 18px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -67,32 +61,35 @@ label {
     line-height: 14px;
     text-align: center;
     color: #000000;
-}
-
-/*footer*/ 
-@media (min-width: 300px) {
-    footer {
-    background-color: #FFFFFF;
-    padding: 1px;
+    }
+footer {
     position: fixed;
     bottom: 0;
-    padding-top: 10px;
+    background-color: white;
     left: 0;
-    right:0;
+    right: 0;
+    padding: 0.5rem;
     display: flex;
     justify-content: flex-end;
     }
-    footer a{
-        padding: 4px;
-        align-content: center;
-}
-@media (max-width: 500px) {
-    footer {
-    display: flex;
-    justify-content: center;
-
-}
-}}
+footer a{
+    padding: 4px;
+    align-content: center;
+    }
+ @media (max-width: 500px){
+    body#login{
+    background: transparent;
+    }
+    #login #copa{
+    display: block;
+    }
+    #login footer{
+    position:static;
+    }   
+    #login main{
+    flex-direction: column;
+    }
+    }
 /* IMAGEN COPA*/ 
 @media (max-width: 500px) {
     .copa{
@@ -103,10 +100,8 @@ label {
     margin: auto;
     margin-top: 58px;
     margin-bottom: 65px;
-}
-} 
+}} 
 /*Nav map*/
-
 nav {
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -150,7 +145,7 @@ li {
     Width: 12.38px;
     margin-right: 18px;
     margin-left: 21px;
-    display: none;
+   display: none;
 }
 .logo-g{
     display: block;
@@ -227,10 +222,4 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-@media (min-width:500px){
-    .login-container{
-        height: 93hv;
-    }
 }
